@@ -12,7 +12,7 @@ int min(int a,int b)
 }
 int main()
 {
-	int a,b,c,i,d=0;
+	int a,b,c,i;
 	int T;
 	scanf("%d",&T);
 	while(T--)
@@ -20,16 +20,17 @@ int main()
 	scanf("%d",&a); // alice initially has the number a
 		scanf("%d",&b); // bob has the number b
 			scanf("%d",&c); // c denote n turns of game
+                        int d=0;
 			for(i=1;i<=c;i++)//loop execute until n no.of turns
 			{
 				if(d==0)
 				{
-					a=a+i;
+					a=a*2;
 					d=1;
 				}
 				else
 				{
-					b=b+i;
+					b=b*2;
 					d=0;
 				}
 				}
